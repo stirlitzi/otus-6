@@ -13,7 +13,7 @@ add_executable(otus6_test test_matrix.cpp)
 install(TARGETS matrix RUNTIME DESTINATION bin)
 enable_testing()
 
-add_test(otus6_test test_matrix)
+add_test(otus6_test otus6_test)
 set(CPACK_GENERATOR DEB)
 
 set(CPACK_PACKAGE_VERSION_MAJOR "${PROJECT_VERSION_MAJOR}")
