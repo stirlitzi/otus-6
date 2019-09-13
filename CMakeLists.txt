@@ -9,8 +9,11 @@ endif ()
 set(CMAKE_CXX_STANDARD 17)
 
 add_executable(matrix main.cpp matrix.h test_matrix.cpp)
+add_executable(otus6_test test_matrix.cpp)
 install(TARGETS matrix RUNTIME DESTINATION bin)
 enable_testing()
+
+add_test(otus6_test test_matrix)
 set(CPACK_GENERATOR DEB)
 
 set(CPACK_PACKAGE_VERSION_MAJOR "${PROJECT_VERSION_MAJOR}")
