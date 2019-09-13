@@ -10,6 +10,7 @@ set(CMAKE_CXX_STANDARD 17)
 
 add_executable(matrix main.cpp matrix.h)
 add_executable(otus6_test matrix.h test_matrix.cpp)
+target_link_libraries(otus6_test gtest gtest_main)
 install(TARGETS matrix RUNTIME DESTINATION bin)
 enable_testing()
 
