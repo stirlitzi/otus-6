@@ -12,9 +12,9 @@ add_executable(matrix main.cpp matrix.h)
 install(TARGETS matrix RUNTIME DESTINATION bin)
 enable_testing()
 #include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
-add_executable(matrix_test matrix.h test_matrix.cpp)
-target_link_libraries(matrix_test gtest gtest_main)
-add_test(matrix_test matrix_test)
+#add_executable(matrix_test matrix.h test_matrix.cpp)
+#target_link_libraries(matrix_test gtest gtest_main)
+#add_test(matrix_test matrix_test)
 
 set(CPACK_GENERATOR DEB)
 
